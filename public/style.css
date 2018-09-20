@@ -1,0 +1,35 @@
+body {
+  display: grid;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(25, 25, 25) !important;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  height: 100%;
+}
+
+#HEADER {
+}
+
+#midSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: calc(100% - 350px);
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+}
+
+#RAApp {
+  position: relative;
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+#albumApp {
+}

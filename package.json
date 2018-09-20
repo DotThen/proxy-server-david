@@ -1,0 +1,20 @@
+{
+  "name": "FECdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "console-stamp": "^0.2.6",
+    "express": "latest",
+    "morgan": "latest"
+  },
+  "devDependencies": {}
+}
