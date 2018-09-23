@@ -50,7 +50,7 @@
 .rc-dropdown-menu > .rc-dropdown-menu-item-active {
   background-color: #414141;
   color: #ffffff;
-  width: 126px;
+  width: 100%;
 }
 
 .rc-dropdown-menu > .rc-dropdown-menu-item-disabled {

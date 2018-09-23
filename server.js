@@ -19,28 +19,28 @@ app.use(function(err, req, res, next) {
 
 app.all('/artists/albums/:artistID', (req, res, next) => {
   console.log('REDIRECTING TO 3001 PLAYER');
-  res.redirect('http://localhost:3001/artists/albums/' + req.params.artistID);
+  res.redirect('http://52.15.129.193/artists/albums/' + req.params.artistID);
   next();
 });
 
 // NOTE: 3002 Related Artists
-app.all('/relatedArtists/id/artist', (req, res, next) => {
+app.all('/artist/:id/relatedArtists', (req, res, next) => {
   console.log('REDIRECTING TO 3002 RELATED ARTISTS');
-  res.redirect('http://localhost:3002/relatedArtists/id/artist/');
+  res.redirect('http://18.206.245.56/artist/' + req.params.id + '/relatedArtists/');
   next();
 });
 
 // NOTE: 3003 Popular Songs
 app.all('/artist/:id', (req, res, next) => {
   console.log('REDIRECTING TO 3003 POPULAR SONGS');
-  res.redirect('http://localhost:3003/artist/' + req.params.id);
+  res.redirect('http://18.224.17.253/artist/' + req.params.id);
   next();
 });
 
 // NOTE: 3004 Header
 app.all('/artists/:artistID', (req, res, next) => {
   console.log('REDIRECTING TO 3004 - HEADER');
-  res.redirect('http://localhost:3004/artists/' + req.params.artistID);
+  res.redirect('http://35.172.133.115/artists/' + req.params.artistID);
   next();
 });
 

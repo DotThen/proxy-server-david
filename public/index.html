@@ -2,21 +2,35 @@
 <html lang="en" style="overflow: hidden; height: 100%;">
   <head>
     <meta charset="UTF-8">
+    <link rel="preload" href="/playerDD.style.css" as="style">
     <link rel="stylesheet" href="/playerDD.style.css">
+    <link rel="preload" href="/style.css" as="style">
     <link rel="stylesheet" href="/style.css">
+    <link rel="preload" href="/RA.style.css" as="style">
+    <link rel="stylesheet" href="/RA.style.css">  
+
+    <link rel="text/javascript" src="https://s3.amazonaws.com/relatedartists/bundle.js" as="script">
+    <link rel="text/javascript" src="https://s3-us-west-1.amazonaws.com/popularsongs/bundle.js" as="script">
+    <link rel="text/javascript" src="https://s3-us-west-1.amazonaws.com/spotifycloneartists/scripts/bundle.js" as="script">
+  
+    <link rel="text/javascript" src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js" as="script">
+
+
     <title>Spotify Clone</title>
   </head>
   <body>
     <div id="HEADER"></div>
     <div id="midSection">
-      <div id="app"></div>
+      <div id="popularApp"></div>
       <div id="RAApp"></div>
     </div>
     <div id="albumApp"></div>
-    <script src="http://localhost:3001/bundle.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3003/dist/bundle.js"></script>
-    <script src="http://localhost:3004/bundle.js"></script>
+    <script async type="text/javascript" src="https://s3.us-east-2.amazonaws.com/spotifyalbumplayer/bundle.js"></script>    
+    <script async type="text/javascript" src="https://s3.amazonaws.com/relatedartists/bundle.js"></script>
+    <script async type="text/javascript" src="https://s3-us-west-1.amazonaws.com/popularsongs/bundle.js"></script>
+    <script async type="text/javascript" src="https://s3-us-west-1.amazonaws.com/spotifycloneartists/scripts/bundle.js"></script>
+  
+    <script async type="text/javascript" src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
 
   </body>
 </html>

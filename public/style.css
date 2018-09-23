@@ -13,23 +13,31 @@ body {
 }
 
 #midSection {
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-  width: calc(100% - 350px);
+  display: grid;
+  grid-template-columns: 220px 6fr 4fr;
 }
 
-#app {
+#popularApp {
   margin: 0;
   padding: 0;
+  grid-column-start: 2;
+  user-select: none;
 }
 
 #RAApp {
-  position: relative;
-  float: right;
-  top: 0;
-  right: 0;
+  margin: 0;
+  padding: 0;
+  grid-column-start: 3;
+  word-wrap: break-word;
+  color: white;
+  user-select: none;
+  max-width: 390px;
 }
 
 #albumApp {
+  user-select: none;
+}
+
+.container-fluid.react-client-src-styles-App__popular-songs--JzU-v {
+  padding-left: 10px;
 }
