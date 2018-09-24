@@ -5,8 +5,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const axios = require('axios');
+const compression = require('compression');
 
 app.use(morgan('dev'));
+app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 
